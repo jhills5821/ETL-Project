@@ -1,0 +1,50 @@
+CREATE TABLE fox_news (
+	id SERIAL NOT NULL PRIMARY KEY,
+	date varchar(15),
+	headline varchar(250),
+	summary varchar(750),
+	pos_head numeric,
+	neg_head numeric,
+	neut_head numeric,
+	pos_sum numeric,
+	neg_sum numeric,
+	neut_sum, numeric
+);
+
+DELETE FROM fox_news;
+
+SELECT * FROM fox_news;
+
+CREATE TABLE msnbc_news (
+	id SERIAL NOT NULL PRIMARY KEY,
+	date varchar(65),
+	headline varchar(250),
+	summary varchar(750),
+	pos_head numeric,
+	neg_head numeric,
+	neut_head numeric,
+	pos_sum numeric,
+	neg_sum numeric,
+	neut_sum, numeric
+);
+
+SELECT * FROM msnbc_news;
+
+DELETE FROM msnbc_news;
+
+CREATE TABLE cnn_news (
+	id SERIAL NOT NULL PRIMARY KEY,
+	date varchar(65),
+	headline varchar(250),
+	summary varchar(12000),
+	pos_head numeric,
+	neg_head numeric,
+	neut_head numeric,
+	pos_sum numeric,
+	neg_sum numeric,
+	neut_sum, numeric
+);
+
+SELECT * FROM cnn_news;
+
+DELETE FROM cnn_news;
